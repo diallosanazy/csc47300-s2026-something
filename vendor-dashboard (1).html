@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vendor Dashboard — StreetBite</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <nav>
+    <div class="nav-logo">Street<span>Bite</span> <span style="color:#ccc;font-weight:400;font-size:0.82rem">/ Vendor</span></div>
+    <ul class="nav-links">
+      <li><a href="#" class="active">Dashboard</a></li>
+      <li><a href="#">Location</a></li>
+      <li><a href="#">Menu</a></li>
+      <li><a href="#">Hours</a></li>
+      <li><a href="#">Profile</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="status-pill"><span class="status-dot"></span> Open</div>
+    </div>
+  </nav>
+
+  <div class="page">
+
+    <div class="page-header">
+      <div>
+        <h1>Dashboard</h1>
+        <p class="page-sub">Manage your cart info, menu, and hours.</p>
+      </div>
+      <span class="vendor-chip">Vendor Name</span>
+    </div>
+
+    
+    <div class="content-grid">
+
+      
+      <div class="section">
+        <div class="section-head">
+          <span class="section-title">Location</span>
+          <a class="section-link" href="#">Update</a>
+        </div>
+        <div class="section-body">
+          <div class="form-grid">
+            <div class="field full">
+              <label>Street Address</label>
+              <input type="text" placeholder="e.g. 28th St & 7th Ave" />
+            </div>
+            <div class="field">
+              <label>Neighborhood</label>
+              <input type="text" placeholder="e.g. Chelsea" />
+            </div>
+            <div class="field">
+              <label>City</label>
+              <input type="text" placeholder="e.g. New York, NY" />
+            </div>
+            <div class="field">
+              <label>Food Type</label>
+              <select>
+                <option>Select food type</option>
+                <option>Mexican Street Food</option>
+                <option>American</option>
+                <option>Asian</option>
+                <option>Coffee & Drinks</option>
+                <option>Desserts</option>
+              </select>
+            </div>
+            <div class="field">
+              <label>Status</label>
+              <select>
+                <option>Open Now</option>
+                <option>Closed</option>
+                <option>Opening Soon</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="form-footer">
+          <button class="save-btn">Save</button>
+        </div>
+      </div>
+
+      
+      <div class="section">
+        <div class="section-head">
+          <span class="section-title">Menu Items</span>
+        </div>
+        <div class="section-body">
+          <div class="menu-item">
+            <span class="menu-name">Item Name</span>
+            <span class="menu-price">$0.00</span>
+            <button class="icon-btn">✏</button>
+            <button class="icon-btn del">✕</button>
+          </div>
+          <div class="menu-item">
+            <span class="menu-name">Item Name</span>
+            <span class="menu-price">$0.00</span>
+            <button class="icon-btn">✏</button>
+            <button class="icon-btn del">✕</button>
+          </div>
+          <div class="menu-item">
+            <span class="menu-name">Item Name</span>
+            <span class="menu-price">$0.00</span>
+            <button class="icon-btn">✏</button>
+            <button class="icon-btn del">✕</button>
+          </div>
+          <button class="add-btn">+ Add menu item</button>
+        </div>
+      </div>
+
+      
+      <div class="section">
+        <div class="section-head">
+          <span class="section-title">Hours</span>
+        </div>
+        <div class="section-body">
+          <div class="hours-table">
+            <div class="hours-row">
+              <div class="hours-cell day-col">Mon</div>
+              <div class="hours-cell time-col"><div class="hours-inputs"><input type="time" value="09:00" /><span class="hours-sep">–</span><input type="time" value="18:00" /></div></div>
+              <div class="hours-cell toggle-col"><button class="toggle"></button></div>
+            </div>
+            <div class="hours-row">
+              <div class="hours-cell day-col">Tue</div>
+              <div class="hours-cell time-col"><div class="hours-inputs"><input type="time" value="09:00" /><span class="hours-sep">–</span><input type="time" value="18:00" /></div></div>
+              <div class="hours-cell toggle-col"><button class="toggle"></button></div>
+            </div>
+            <div class="hours-row">
+              <div class="hours-cell day-col">Wed</div>
+              <div class="hours-cell time-col"><div class="hours-inputs"><input type="time" value="09:00" /><span class="hours-sep">–</span><input type="time" value="18:00" /></div></div>
+              <div class="hours-cell toggle-col"><button class="toggle"></button></div>
+            </div>
+            <div class="hours-row">
+              <div class="hours-cell day-col">Thu</div>
+              <div class="hours-cell time-col"><div class="hours-inputs"><input type="time" value="09:00" /><span class="hours-sep">–</span><input type="time" value="18:00" /></div></div>
+              <div class="hours-cell toggle-col"><button class="toggle"></button></div>
+            </div>
+            <div class="hours-row">
+              <div class="hours-cell day-col">Fri</div>
+              <div class="hours-cell time-col"><div class="hours-inputs"><input type="time" value="09:00" /><span class="hours-sep">–</span><input type="time" value="20:00" /></div></div>
+              <div class="hours-cell toggle-col"><button class="toggle"></button></div>
+            </div>
+            <div class="hours-row">
+              <div class="hours-cell day-col">Sat</div>
+              <div class="hours-cell time-col"><div class="hours-inputs"><input type="time" value="10:00" /><span class="hours-sep">–</span><input type="time" value="20:00" /></div></div>
+              <div class="hours-cell toggle-col"><button class="toggle"></button></div>
+            </div>
+            <div class="hours-row">
+              <div class="hours-cell day-col">Sun</div>
+              <div class="hours-cell time-col"><span class="hours-closed-text">Closed</span></div>
+              <div class="hours-cell toggle-col"><button class="toggle off"></button></div>
+            </div>
+          </div>
+        </div>
+        <div class="form-footer">
+          <button class="save-btn">Save</button>
+        </div>
+      </div>
+
+      
+      <div class="section full-width">
+        <div class="section-head">
+          <span class="section-title">Profile</span>
+        </div>
+        <div class="section-body">
+          <div class="form-grid">
+            <div class="field">
+              <label>Business Name</label>
+              <input type="text" placeholder="Your business name" />
+            </div>
+            <div class="field">
+              <label>Phone</label>
+              <input type="text" placeholder="(000) 000-0000" />
+            </div>
+            <div class="field full">
+              <label>Short Description</label>
+              <textarea placeholder="Tell customers a little about your cart..."></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="form-footer">
+          <button class="save-btn">Save</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
