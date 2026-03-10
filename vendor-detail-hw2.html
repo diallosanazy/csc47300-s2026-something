@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vendor Detail • Street Vendor Finder</title>
+
+  <style>
+    :root{
+      --bg:#0b1020;
+      --card:rgba(255,255,255,.08);
+      --border:rgba(255,255,255,.14);
+      --text:#eef2ff;
+      --muted:rgba(238,242,255,.78);
+      --accent:#fb7185;
+      --green:#22c55e;
+      --r:16px;
+      --shadow: 0 16px 40px rgba(0,0,0,.35);
+    }
+
+    *{box-sizing:border-box}
+
+    body{
+      margin:0;
+      font-family:system-ui, Arial, sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(900px 500px at 20% 0%, rgba(251,113,133,.22), transparent 60%),
+        radial-gradient(900px 500px at 80% 10%, rgba(34,197,94,.18), transparent 60%),
+        var(--bg);
+    }
+
+    .wrap{max-width:1000px; margin:28px auto; padding:0 16px 40px}
+
+    /* NAV (Flex + glass + shadow) */
+    .nav{
+      display:flex; justify-content:space-between; align-items:center; gap:12px;
+      padding:14px 16px;
+      border:1px solid var(--border);
+      border-radius:var(--r);
+      background:rgba(255,255,255,.06);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(10px);
+    }
+
+    .brand{font-weight:900; display:flex; align-items:center; gap:10px}
+
+    /* Advanced: animation */
+    .dot{
+      width:11px;height:11px;border-radius:999px;
+      background:linear-gradient(135deg,var(--accent), #60a5fa);
+      box-shadow:0 0 16px rgba(251,113,133,.65);
+      animation: glow 2.2s ease-in-out infinite;
+    }
+    @keyframes glow{
+      0%,100%{ transform: scale(1); opacity: .9; }
+      50%{ transform: scale(1.25); opacity: 1; }
+    }
+
+    .links a{
+      color:var(--muted);
+      margin-left:12px;
+      font-weight:800;
+      font-size:14px;
+      text-decoration:none;
+      padding:8px 10px;
+      border-radius:12px;
+      transition: background .2s ease, color .2s ease; /* Advanced: transition */
+    }
+    .links a:hover{
+      color:var(--text);
+      background: rgba(255,255,255,.08);
+    }
+
+    /* HERO (glass + shadow) */
+    .hero{
+      margin-top:16px;
+      padding:18px;
+      border:1px solid var(--border);
+      border-radius:calc(var(--r) + 6px);
+      background:rgba(255,255,255,.06);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(10px);
+    }
+
+    .top{
+      display:flex; justify-content:space-between; gap:16px; align-items:flex-start; flex-wrap:wrap;
+    }
+    h1{margin:0; font-size:34px; letter-spacing:-.4px}
+    .sub{margin:8px 0 0; color:var(--muted); line-height:1.6; max-width:65ch}
+
+    .pill{
+      display:inline-flex; gap:8px; align-items:center;
+      padding:7px 10px; margin-top:10px; margin-right:8px;
+      border-radius:999px;
+      border:1px solid var(--border);
+      background:rgba(255,255,255,.06);
+      color:var(--muted);
+      font-weight:900;
+      font-size:13px;
+    }
+
+    /* Buttons (hover transform + transition) */
+    .btn{
+      border:1px solid var(--border);
+      background:rgba(255,255,255,.09);
+      color:var(--text);
+      padding:10px 12px;
+      border-radius:12px;
+      font-weight:900;
+      cursor:pointer;
+      transition: transform .12s ease, background .2s ease;
+    }
+    .btn.primary{
+      border-color:rgba(251,113,133,.65);
+      background:rgba(251,113,133,.18);
+    }
+    .btn:hover{
+      background:rgba(255,255,255,.13);
+      transform: translateY(-2px);
+    }
+
+    /* GRID */
+    .grid{margin-top:16px; display:grid; grid-template-columns:1fr 320px; gap:14px}
+    @media (max-width:900px){ .grid{grid-template-columns:1fr} }
+
+    /* Card (Advanced: pseudo-element accent + shadow + glass) */
+    .card{
+      border:1px solid var(--border);
+      border-radius:var(--r);
+      background:var(--card);
+      padding:16px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(10px);
+      position: relative;
+      overflow: hidden;
+      transition: transform .12s ease;  /* Advanced */
+    }
+    .card:hover{ transform: translateY(-2px); }
+
+    /* Advanced: pseudo-element */
+    .card::before{
+      content:"";
+      position:absolute;
+      left:0; top:0;
+      width:5px; height:100%;
+      background: linear-gradient(180deg, var(--accent), rgba(34,197,94,.9));
+      opacity:.85;
+    }
+
+    .title{margin:0; font-size:18px}
+    .small{margin:6px 0 0; color:var(--muted); font-size:14px; line-height:1.6}
+
+    .menu{margin-top:12px; display:grid; grid-template-columns:1fr 1fr; gap:10px}
+    @media (max-width:650px){ .menu{grid-template-columns:1fr} }
+
+    /* Menu Item (Advanced: hover) */
+    .item{
+      border:1px solid var(--border);
+      border-radius:14px;
+      background:rgba(255,255,255,.06);
+      padding:12px;
+      display:flex;
+      justify-content:space-between;
+      gap:10px;
+      transition: transform .12s ease, background .2s ease;
+    }
+    .item:hover{
+      transform: translateY(-2px);
+      background: rgba(255,255,255,.09);
+    }
+
+    .item h3{margin:0 0 6px; font-size:15px}
+    .item p{margin:0; color:var(--muted); font-size:13px; line-height:1.45}
+    .price{font-weight:1000; white-space:nowrap}
+
+    .info{
+      margin-top:10px;
+      border:1px solid var(--border);
+      border-radius:14px;
+      padding:12px;
+      background:rgba(255,255,255,.06);
+      display:grid;
+      gap:10px;
+    }
+    .row{
+      display:flex; justify-content:space-between; gap:10px;
+      color:var(--muted); font-weight:900; font-size:13px
+    }
+    .row span:last-child{color:var(--text)}
+
+    .open{
+      display:inline-flex; align-items:center; gap:8px; margin-top:10px;
+      padding:8px 12px; border-radius:999px;
+      border:1px solid rgba(34,197,94,.35);
+      background:rgba(34,197,94,.12);
+      color:#bbf7d0; font-weight:1000;
+    }
+    .pulse{
+      width:10px;height:10px;border-radius:999px;
+      background:var(--green);
+      box-shadow:0 0 14px rgba(34,197,94,.6)
+    }
+
+    .map{
+      margin-top:10px;
+      height:160px;
+      border-radius:14px;
+      border:1px solid var(--border);
+      background:
+        repeating-linear-gradient(90deg, rgba(255,255,255,.06) 0 2px, transparent 2px 18px),
+        repeating-linear-gradient(0deg, rgba(255,255,255,.04) 0 2px, transparent 2px 18px);
+      display:flex; align-items:center; justify-content:center; text-align:center;
+      color:var(--muted); font-weight:900;
+      padding:10px;
+    }
+
+    footer{margin-top:16px; text-align:center; color:var(--muted); font-size:13px}
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+
+    <div class="nav">
+      <div class="brand"><span class="dot"></span>Street Vendor Finder</div>
+      <div class="links">
+        <a href="#">Home</a>
+        <a href="#">Vendors</a>
+        <a href="#">About</a>
+      </div>
+    </div>
+
+    <section class="hero">
+      <div class="top">
+        <div>
+          <h1>King’s Halal Cart</h1>
+          <p class="sub">
+            Halal Best Food.
+          </p>
+          <span class="pill">Halal • Street Food</span>
+          <span class="pill">Harlem</span>
+          <span class="pill">⭐ 4.8</span>
+        </div>
+
+        <div>
+          <button class="btn primary">❤ Favorite</button>
+          <button class="btn">📍 Directions</button>
+        </div>
+      </div>
+    </section>
+
+    <div class="grid">
+      <!-- Left: Menu -->
+      <section class="card">
+        <h2 class="title">Menu Highlights</h2>
+        <p class="small">Halal Cart Menu.</p>
+
+        <div class="menu">
+          <div class="item">
+            <div>
+              <h3>Chicken Over Rice</h3>
+              <p>White + hot sauce, salad, seasoned rice.</p>
+            </div>
+            <div class="price">$10</div>
+          </div>
+
+          <div class="item">
+            <div>
+              <h3>Lamb Gyro</h3>
+              <p>Pita wrap, onions, tomatoes, signature sauce.</p>
+            </div>
+            <div class="price">$9</div>
+          </div>
+
+          <div class="item">
+            <div>
+              <h3>Falafel Platter</h3>
+              <p>Hummus, salad, pita bread.</p>
+            </div>
+            <div class="price">$9</div>
+          </div>
+
+          <div class="item">
+            <div>
+              <h3>Mango Juice</h3>
+              <p>Cold drink option for a quick refresh.</p>
+            </div>
+            <div class="price">$4</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Right: Info -->
+      <aside class="card">
+        <h2 class="title">Vendor Info</h2>
+        <p class="small">Placeholder info.</p>
+
+        <div class="open"><span class="pulse"></span>OPEN NOW</div>
+
+        <div class="info">
+          <div class="row"><span>Address</span><span>W 135th &amp; Malcolm X</span></div>
+          <div class="row"><span>Hours</span><span>Mon–Fri 11am–7pm</span></div>
+          <div class="row"><span>Payment</span><span>Cash • Card</span></div>
+          <div class="row"><span>Popular</span><span>Chicken • Lamb</span></div>
+        </div>
+
+        <div class="map">
+          Map Placeholder<br>(Later: Google Maps / Mapbox)
+        </div>
+      </aside>
+    </div>
+
+    <footer>Vendor Main Page</footer>
+
+  </div>
+</body>
+</html>
