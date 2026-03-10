@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(50, 100, 255);
+    margin: 1rem;
+}
+
+.web-border {
+    background-color: #ebeae9;
+}
+
+html{
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Nav Begin */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 20px;
+    margin-bottom: 5rem;
+}
+
+nav ul {
+    margin-left: 5rem;
+    list-style: none;
+}
+
+li a{
+    text-decoration: none;
+    color: #000;
+}
+
+nav .burger{
+    margin-right: 5rem;
+    cursor: pointer;
+}
+
+nav .burger span{
+    height: 4px;
+    border: 2px solid #000;
+    margin: 4px;
+    background: #000;
+}
+
+/* Nav End */   
+
+/* Header Section Begin*/
+header {
+    margin: 6rem;
+}
+
+.main-title {
+    width: 50%;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.description {
+    width: 50%;
+    margin-top: 3rem;
+    font-size: 1.5rem;
+    line-height: 30px;
+}
+/* Header Section End */
+
+/* Main Section Begin */
+
+main {
+    margin: 0 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 40px;
+}
+
+main .grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: rgb(50, 100, 255);
+    padding: 20px;
+}
+
+main img {
+    margin: 10px;
+    position: relative;
+}
+
+main img.img1 {
+    animation: fadeinleft 1s;
+}
+
+main img.img2 {
+    animation: fadeinright 1s;
+}
+
+@keyframes fadeinleft {
+    from {
+        right: 50px;
+        opacity: 0;
+    }
+    to {
+        right: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeinright {
+    from {
+        left: 50px;
+        opacity: 0;
+    }
+    to {
+        left: 0px;
+        opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: red;
+  }
+}
+
+/* Main Section End */
+
+/*Footer Section Begin*/
+footer {
+        margin-top: 10rem;
+        height: 50vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        color: white;
+        background-color: rgb(50, 100, 255)
+}
+
+footer .logo-container h1{
+    font-size: 4rem;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 20px;
+}   
+
+footer .logo-container p {
+    max-width: 400px;
+    font-size: sans-serif;
+    line-height: 25px;
+}
+
+footer .about-us {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .about-us .container{
+    margin: 20px;
+    text-align: center;
+}
+
+footer .about-us .container h1 {
+    margin-bottom: 50px;
+}
+
+footer .about-us .container p {
+    margin-bottom: 20px;
+}
+
+/*Footer Section End*/
