@@ -1,0 +1,55 @@
+/* analytics page styles */
+
+.c28893a34 {background-color:#F7F6F3;display:flex;height:100vh;line-height:16px;width:100%;}
+.c50c41acd {background-color:#1C1917;display:flex;flex-direction:column;flex-shrink:0;height:100%;padding:32px 24px;width:240px;}
+.c3d227836 {align-items:center;display:flex;gap:12px;padding-bottom:40px;}
+.c80980012 {align-items:center;background-color:#FF6B2C;border-radius:10px;display:flex;flex-shrink:0;height:36px;justify-content:center;width:36px;}
+.cdc7b46f5 {color:#FFFFFF;font-size:18px;font-weight:700;letter-spacing:-0.02em;line-height:22px;}
+.c6ec2516f {display:flex;flex-direction:column;gap:4px;width:100%;}
+.cbeb37533 {align-items:center;border-radius:8px;display:flex;gap:12px;padding:10px 12px;}
+.c00c2d284 {color:#6B6963;font-size:14px;line-height:18px;}
+.c19489a4f {align-items:center;background-color:#FFFFFF14;border-radius:8px;display:flex;gap:12px;padding:10px 12px;}
+.cd37b3eb5 {color:#FFFFFF;font-size:14px;font-weight:500;line-height:18px;}
+.cc3694d28 {display:flex;flex-direction:column;flex:1;height:100%;overflow:hidden;padding:32px 40px;}
+.c6cb854e6 {align-items:center;display:flex;justify-content:space-between;padding-bottom:28px;width:100%;}
+.c00507de5 {color:#1C1917;font-size:28px;font-weight:800;letter-spacing:-0.03em;line-height:34px;}
+.c22a549f8 {align-items:center;background-color:#FFFFFF;border:1px solid #E8E6E1;border-radius:10px;display:flex;gap:4px;padding:4px;}
+.c85337102 {border-radius:7px;display:flex;padding:7px 16px;}
+.ce2c651e4 {color:#9C9890;font-size:13px;font-weight:500;line-height:16px;}
+.cb17fe462 {background-color:#1C1917;border-radius:7px;display:flex;padding:7px 16px;}
+.cdcd2b2f2 {color:#FFFFFF;font-size:13px;font-weight:600;line-height:16px;}
+.c711575ea {display:flex;gap:16px;padding-bottom:24px;width:100%;}
+.c7ac95698 {background-color:#FFFFFF;border:1px solid #E8E6E1;border-radius:14px;display:flex;flex:1;flex-direction:column;gap:4px;padding:20px 24px;}
+.cc30e2d67 {color:#9C9890;font-size:12px;font-weight:500;letter-spacing:0.06em;line-height:16px;text-transform:uppercase;}
+.c6364f81b {align-items:baseline;display:flex;gap:8px;}
+.c28749f1f {color:#2D9F6F;font-size:13px;font-weight:600;line-height:16px;}
+.c106aa6c7 {color:#9C9890;font-size:13px;font-weight:600;line-height:16px;}
+.c0b385a3c {display:flex;flex:1;gap:20px;width:1120px;}
+.ce37de05b {background-color:#FFFFFF;border:1px solid #E8E6E1;border-radius:16px;display:flex;flex:1.5;flex-direction:column;overflow:hidden;padding:24px;}
+.c54f339ae {align-items:center;display:flex;justify-content:space-between;padding-bottom:24px;}
+.c9407cbad {color:#1C1917;font-size:16px;font-weight:700;line-height:20px;}
+.c9dac2f82 {align-items:flex-end;display:flex;flex:1;gap:16px;padding-bottom:16px;width:100%;}
+.cf539b4b5 {align-items:center;display:flex;flex:1;flex-direction:column;gap:8px;}
+.cb0e74988 {background-color:#F0EFEC;border-radius:8px;height:140px;width:100%;}
+.c7b90673d {color:#9C9890;font-size:12px;font-weight:500;line-height:16px;}
+.c82e3853b {background-color:#F0EFEC;border-radius:8px;height:180px;width:100%;}
+.c9eebd9f0 {background-color:#F0EFEC;border-radius:8px;height:120px;width:100%;}
+.cf0f9e13b {background-color:#F0EFEC;border-radius:8px;height:200px;width:100%;}
+.c1e3f3b10 {background-color:#F0EFEC;border-radius:8px;height:260px;width:100%;}
+.c6075e115 {background-color:#F0EFEC;border-radius:8px;height:300px;width:100%;}
+.c76b43d06 {background-color:#FF6B2C;border-radius:8px;height:240px;width:100%;}
+.c91280c5a {color:#1C1917;font-size:12px;font-weight:600;line-height:16px;}
+.cf54c0725 {background-color:#FFFFFF;border:1px solid #E8E6E1;border-radius:16px;display:flex;flex:0.7;flex-direction:column;overflow:hidden;padding:24px;}
+.c9922c0d7 {color:#1C1917;font-size:16px;font-weight:700;line-height:20px;padding-bottom:20px;}
+.c065fcef8 {display:flex;flex-direction:column;gap:16px;width:100%;}
+.ce47f6ecd {display:flex;flex-direction:column;gap:6px;}
+.c5fd6f910 {align-items:center;display:flex;justify-content:space-between;}
+.c91e3dc28 {color:#1C1917;font-size:14px;font-weight:500;line-height:18px;}
+.c1d7926b3 {color:#1C1917;font-size:14px;font-weight:700;line-height:18px;}
+.c1a75d3d1 {background-color:#F0EFEC;border-radius:100px;height:6px;width:100%;}
+.c61bcfa8c {background-color:#FF6B2C;border-radius:100px;height:100%;width:85%;}
+.cbd09429b {background-color:#FF6B2C;border-radius:100px;height:100%;opacity:0.7;width:68%;}
+.c46031007 {background-color:#FF6B2C;border-radius:100px;height:100%;opacity:0.5;width:48%;}
+.ca3a72d45 {background-color:#FF6B2C;border-radius:100px;height:100%;opacity:0.35;width:37%;}
+.c3714968a {background-color:#FF6B2C;border-radius:100px;height:100%;opacity:0.25;width:32%;}
+.c34aeca2f {background-color:#FF6B2C;border-radius:100px;height:100%;opacity:0.2;width:28%;}
