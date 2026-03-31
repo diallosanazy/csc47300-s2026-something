@@ -1,0 +1,34 @@
+/* favorites page styles */
+
+.cfav_wrap {background-color:#FAFAF8;min-height:100vh;}
+.cfav_nav {align-items:center;border-bottom:1px solid #E8E6E1;display:flex;justify-content:space-between;padding:16px 32px;}
+.cfav_logo {align-items:center;display:flex;gap:10px;}
+.cfav_logo_icon {align-items:center;background-color:#FF6B2C;border-radius:8px;display:flex;flex-shrink:0;height:32px;justify-content:center;width:32px;}
+.cfav_wordmark {color:#1C1917;font-size:18px;font-weight:700;letter-spacing:-0.02em;line-height:22px;}
+.cfav_search_wrap {align-items:center;background-color:#FFFFFF;border:1px solid #E8E6E1;border-radius:10px;display:flex;gap:10px;padding:10px 16px;width:380px;}
+.cfav_search {background:transparent;border:none;color:#1C1917;flex:1;font-family:inherit;font-size:14px;line-height:18px;outline:none;}
+.cfav_nav_right {align-items:center;display:flex;gap:16px;}
+.cfav_fav_btn {align-items:center;display:flex;}
+.cfav_avatar {align-items:center;background-color:#1C1917;border-radius:50%;color:#FFFFFF;display:flex;font-size:14px;font-weight:600;height:36px;justify-content:center;width:36px;}
+.cfav_main {padding:40px 48px;}
+.cfav_heading {align-items:baseline;display:flex;gap:16px;padding-bottom:32px;}
+.cfav_title {color:#1C1917;font-size:32px;font-weight:800;letter-spacing:-0.03em;line-height:38px;}
+.cfav_count {color:#9C9890;font-size:16px;line-height:20px;}
+.cfav_grid {display:grid;gap:24px;grid-template-columns:repeat(3,1fr);}
+.cfav_card {background-color:#FFFFFF;border:1px solid #E8E6E1;border-radius:16px;overflow:hidden;}
+.cfav_card_img {align-items:center;display:flex;height:180px;justify-content:center;position:relative;width:100%;}
+.cfav_img_black {background-color:#1C1917;}
+.cfav_img_teal {background-color:#2C3E2E;}
+.cfav_img_olive {background-color:#4A3728;}
+.cfav_img_blue {background-color:#3B5249;}
+.cfav_img_navy {background-color:#2C3541;}
+.cfav_img_brown {background-color:#5C4A2E;}
+.cfav_badge_open {background-color:#2D9F6F;border-radius:6px;color:#FFFFFF;font-size:11px;font-weight:600;left:12px;line-height:14px;padding:4px 10px;position:absolute;top:12px;}
+.cfav_badge_closed {background-color:#9C9890;border-radius:6px;color:#FFFFFF;font-size:11px;font-weight:600;left:12px;line-height:14px;padding:4px 10px;position:absolute;top:12px;}
+.cfav_heart {align-items:center;background-color:#FFFFFF;border-radius:50%;cursor:pointer;display:flex;height:32px;justify-content:center;position:absolute;right:12px;top:12px;width:32px;}
+.cfav_card_label {color:#FFFFFF26;font-size:32px;font-weight:900;letter-spacing:0.08em;line-height:40px;}
+.cfav_card_info {display:flex;flex-direction:column;gap:6px;padding:16px 20px 20px;}
+.cfav_card_name {color:#1C1917;font-size:17px;font-weight:700;line-height:22px;}
+.cfav_card_meta {color:#9C9890;font-size:14px;line-height:20px;}
+.cfav_card_stats {color:#9C9890;font-size:13px;line-height:16px;}
+.cfav_rating {color:#FF6B2C;font-weight:700;}

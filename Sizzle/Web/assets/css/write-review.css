@@ -1,0 +1,26 @@
+/* write-review page styles */
+
+.crv_wrap {background-color:#FAFAF8;min-height:100vh;}
+.crv_nav {align-items:center;border-bottom:1px solid #E8E6E1;display:flex;justify-content:space-between;padding:16px 32px;}
+.crv_back {align-items:center;color:#1C1917;display:flex;font-size:14px;font-weight:500;gap:8px;line-height:18px;}
+.crv_logo {align-items:center;display:flex;gap:10px;}
+.crv_logo_icon {align-items:center;background-color:#FF6B2C;border-radius:8px;display:flex;flex-shrink:0;height:32px;justify-content:center;width:32px;}
+.crv_logo_text {color:#1C1917;font-size:18px;font-weight:700;letter-spacing:-0.02em;line-height:22px;}
+.crv_avatar {align-items:center;background-color:#1C1917;border-radius:50%;color:#FFFFFF;display:flex;font-size:14px;font-weight:600;height:36px;justify-content:center;width:36px;}
+.crv_main {margin:0 auto;max-width:600px;padding:48px 24px;}
+.crv_title {color:#1C1917;font-size:32px;font-weight:800;letter-spacing:-0.03em;line-height:38px;}
+.crv_subtitle {color:#9C9890;font-size:16px;line-height:22px;padding:8px 0 32px;}
+.crv_rating_card {align-items:center;background-color:#FFFFFF;border:1px solid #E8E6E1;border-radius:16px;display:flex;flex-direction:column;gap:12px;padding:28px;width:100%;}
+.crv_rating_label {color:#9C9890;font-size:12px;font-weight:500;letter-spacing:0.08em;line-height:16px;text-transform:uppercase;}
+.crv_stars {display:flex;gap:8px;}
+.crv_star {cursor:pointer;}
+.crv_rating_text {color:#1C1917;font-size:15px;font-weight:600;line-height:18px;}
+.crv_items_card {background-color:#FFFFFF;border:1px solid #E8E6E1;border-radius:16px;margin-top:24px;padding:24px 28px;width:100%;}
+.crv_items_label {color:#9C9890;font-size:12px;font-weight:500;letter-spacing:0.08em;line-height:16px;margin-bottom:16px;text-transform:uppercase;}
+.crv_item_row {align-items:center;display:flex;justify-content:space-between;padding:8px 0;}
+.crv_item_name {color:#1C1917;font-size:15px;font-weight:500;line-height:18px;}
+.crv_item_stars {display:flex;gap:4px;}
+.crv_item_divider {background-color:#F0EFEC;height:1px;margin:8px 0;}
+.crv_review_label {color:#9C9890;font-size:12px;font-weight:500;letter-spacing:0.08em;line-height:16px;margin-top:32px;padding-bottom:10px;text-transform:uppercase;}
+.crv_textarea {background-color:#FFFFFF;border:1px solid #E8E6E1;border-radius:12px;font-family:inherit;font-size:14px;line-height:22px;min-height:100px;outline:none;padding:16px;resize:vertical;width:100%;}
+.crv_submit {background-color:#FF6B2C;border:none;border-radius:12px;color:#FFFFFF;cursor:pointer;font-family:inherit;font-size:15px;font-weight:700;line-height:18px;margin-top:24px;padding:16px;width:100%;}

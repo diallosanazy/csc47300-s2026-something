@@ -1,0 +1,555 @@
+/* vendor-onboarding wizard — steps 2-4 split-screen layout */
+
+.cvob_layout {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background: #FAFAF8;
+}
+
+/* ── Left panel ── */
+.cvob_left {
+  background: #1C1917;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  height: 100%;
+  justify-content: space-between;
+  padding: 48px;
+  width: 520px;
+}
+
+.cvob_logo {
+  align-items: center;
+  display: flex;
+  gap: 12px;
+}
+
+.cvob_logo-icon {
+  align-items: center;
+  background-color: #FF6B2C;
+  border-radius: 10px;
+  display: flex;
+  flex-shrink: 0;
+  height: 36px;
+  justify-content: center;
+  width: 36px;
+}
+
+.cvob_logo-text {
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 24px;
+}
+
+.cvob_left-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cvob_step-label {
+  color: #FF6B2C;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.cvob_left-title {
+  color: #FFFFFF;
+  font-size: 38px;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  line-height: 44px;
+  margin: 0;
+}
+
+.cvob_left-subtitle {
+  color: #FFFFFF73;
+  font-size: 16px;
+  line-height: 26px;
+  margin: 0;
+  max-width: 380px;
+}
+
+/* ── Step indicators ── */
+.cvob_steps {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.cvob_step {
+  align-items: center;
+  display: flex;
+  gap: 14px;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.cvob_step-done {
+  color: #4BA775;
+}
+
+.cvob_step-done .cvob_step-check {
+  align-items: center;
+  background-color: #4BA775;
+  border-radius: 50%;
+  color: #FFFFFF;
+  display: flex;
+  flex-shrink: 0;
+  font-size: 11px;
+  height: 28px;
+  justify-content: center;
+  width: 28px;
+}
+
+.cvob_step-current {
+  color: #FFFFFF;
+  font-weight: 600;
+}
+
+.cvob_step-current .cvob_step-circle {
+  align-items: center;
+  background-color: #FF6B2C;
+  border-radius: 50%;
+  color: #FFFFFF;
+  display: flex;
+  flex-shrink: 0;
+  font-size: 13px;
+  font-weight: 700;
+  height: 28px;
+  justify-content: center;
+  width: 28px;
+}
+
+.cvob_step-upcoming {
+  color: #FFFFFF4D;
+}
+
+.cvob_step-upcoming .cvob_step-circle-muted {
+  align-items: center;
+  background-color: #FFFFFF14;
+  border-radius: 50%;
+  color: #FFFFFF4D;
+  display: flex;
+  flex-shrink: 0;
+  font-size: 13px;
+  font-weight: 600;
+  height: 28px;
+  justify-content: center;
+  width: 28px;
+}
+
+.cvob_left-footer {
+  color: #FFFFFF4D;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+/* ── Right panel ── */
+.cvob_right {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  overflow-y: auto;
+  padding: 48px 64px;
+}
+
+.cvob_form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 560px;
+  width: 100%;
+}
+
+.cvob_form-title {
+  color: #1C1917;
+  font-size: 26px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 32px;
+  margin: 0;
+}
+
+.cvob_form-subtitle {
+  color: #9C9890;
+  font-size: 14px;
+  line-height: 18px;
+  margin: -8px 0 0;
+}
+
+/* ── Form fields ── */
+.cvob_input-row {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+}
+
+.cvob_field {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.cvob_field-wide {
+  flex: 2;
+}
+
+.cvob_field-narrow {
+  flex: 1;
+}
+
+.cvob_label {
+  color: #6B6963;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.cvob_input {
+  background: #FFFFFF;
+  border: 1.5px solid #E8E6E1;
+  border-radius: 10px;
+  color: #1C1917;
+  font-family: inherit;
+  font-size: 15px;
+  line-height: 20px;
+  outline: none;
+  padding: 12px 14px;
+  transition: border-color 0.15s;
+}
+
+.cvob_input:focus {
+  border-color: #1C1917;
+}
+
+.cvob_input::placeholder {
+  color: #C5C5C0;
+}
+
+.cvob_textarea {
+  background: #FFFFFF;
+  border: 1.5px solid #E8E6E1;
+  border-radius: 10px;
+  color: #1C1917;
+  font-family: inherit;
+  font-size: 15px;
+  height: 72px;
+  line-height: 20px;
+  outline: none;
+  padding: 12px 14px;
+  resize: none;
+  transition: border-color 0.15s;
+}
+
+.cvob_textarea:focus {
+  border-color: #1C1917;
+}
+
+.cvob_textarea::placeholder {
+  color: #C5C5C0;
+}
+
+/* ── Added items card ── */
+.cvob_items-card {
+  background: #F8F6F1;
+  border: 1px solid #E8E6E1;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.cvob_items-title {
+  color: #6B6963;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  padding: 14px 18px 10px;
+  text-transform: uppercase;
+}
+
+.cvob_item-row {
+  align-items: center;
+  border-top: 1px solid #E8E6E1;
+  display: flex;
+  gap: 12px;
+  padding: 12px 18px;
+}
+
+.cvob_item-info {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.cvob_item-name {
+  color: #1C1917;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+}
+
+.cvob_item-desc {
+  color: #9C9890;
+  font-size: 12px;
+  line-height: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.cvob_item-price {
+  color: #1C1917;
+  flex-shrink: 0;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.cvob_item-delete {
+  align-items: center;
+  background: none;
+  border: 1.5px solid #E8E6E1;
+  border-radius: 6px;
+  color: #9C9890;
+  cursor: pointer;
+  display: flex;
+  flex-shrink: 0;
+  font-size: 16px;
+  height: 26px;
+  justify-content: center;
+  line-height: 1;
+  padding: 0;
+  transition: border-color 0.15s, color 0.15s;
+  width: 26px;
+}
+
+.cvob_item-delete:hover {
+  border-color: #C0392B;
+  color: #C0392B;
+}
+
+/* ── Action buttons ── */
+.cvob_actions {
+  display: flex;
+  gap: 12px;
+  padding-top: 8px;
+}
+
+.cvob_btn-add {
+  background: none;
+  border: 1.5px solid #E8E6E1;
+  border-radius: 12px;
+  color: #1C1917;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  padding: 14px 22px;
+  transition: border-color 0.15s;
+}
+
+.cvob_btn-add:hover {
+  border-color: #1C1917;
+}
+
+.cvob_btn-continue {
+  align-items: center;
+  background: #FF6B2C;
+  border: none;
+  border-radius: 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: flex;
+  flex: 1;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 20px;
+  padding: 14px 24px;
+  transition: opacity 0.15s;
+}
+
+.cvob_btn-continue:hover {
+  opacity: 0.9;
+}
+
+.cvob_btn-skip {
+  background: none;
+  border: 1.5px solid #E8E6E1;
+  border-radius: 12px;
+  color: #9C9890;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  padding: 14px 22px;
+  transition: border-color 0.15s, color 0.15s;
+}
+
+.cvob_btn-skip:hover {
+  border-color: #9C9890;
+  color: #6B6963;
+}
+
+/* ── Hours table (step 3) ── */
+.cvob_hours-table {
+  display: flex;
+  flex-direction: column;
+  background: #FFFFFF;
+  border: 1.5px solid #E8E6E1;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.cvob_hours-header {
+  align-items: center;
+  background: #F8F6F1;
+  border-bottom: 1px solid #E8E6E1;
+  color: #6B6963;
+  display: grid;
+  font-size: 11px;
+  font-weight: 600;
+  gap: 12px;
+  grid-template-columns: 110px 48px 1fr;
+  letter-spacing: 0.06em;
+  padding: 10px 18px;
+  text-transform: uppercase;
+}
+
+.cvob_hours-row {
+  align-items: center;
+  border-bottom: 1px solid #F0EFEC;
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 110px 48px 1fr;
+  padding: 10px 18px;
+  transition: opacity 0.15s;
+}
+
+.cvob_hours-row:last-child {
+  border-bottom: none;
+}
+
+.cvob_hours-day {
+  color: #1C1917;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+}
+
+.cvob_toggle {
+  background: #E8E6E1;
+  border-radius: 12px;
+  cursor: pointer;
+  height: 24px;
+  position: relative;
+  transition: background 0.2s;
+  width: 42px;
+}
+
+.cvob_toggle.on {
+  background: #FF6B2C;
+}
+
+.cvob_toggle .cvob_toggle-dot {
+  background: #FFFFFF;
+  border-radius: 50%;
+  height: 18px;
+  left: 3px;
+  position: absolute;
+  top: 3px;
+  transition: left 0.2s;
+  width: 18px;
+}
+
+.cvob_toggle.on .cvob_toggle-dot {
+  left: 21px;
+}
+
+.cvob_hours-selects {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+}
+
+.cvob_hours-select {
+  background: #F8F6F1;
+  border: 1.5px solid #E8E6E1;
+  border-radius: 8px;
+  color: #1C1917;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  outline: none;
+  padding: 6px 10px;
+}
+
+.cvob_hours-dash {
+  color: #9C9890;
+  font-size: 13px;
+}
+
+.cvob_hours-closed {
+  color: #9C9890;
+  font-size: 13px;
+  font-style: italic;
+}
+
+/* ── Location field (step 3) ── */
+.cvob_location-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* ── Payout form (step 4) ── */
+.cvob_payout-card {
+  background: #FFFFFF;
+  border: 1.5px solid #E8E6E1;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px;
+}
+
+.cvob_payout-row {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+}
+
+.cvob_payout-note {
+  align-items: center;
+  background: #F8F6F1;
+  border-radius: 10px;
+  color: #6B6963;
+  display: flex;
+  font-size: 13px;
+  gap: 10px;
+  line-height: 20px;
+  padding: 14px 18px;
+}
+
+.cvob_payout-note svg {
+  flex-shrink: 0;
+}

@@ -1,0 +1,24 @@
+/* pickup-confirmation page styles */
+
+.cpu_wrap {background-color:#FAFAF8;min-height:100vh;}
+.cpu_nav {align-items:center;border-bottom:1px solid #E8E6E1;display:flex;justify-content:space-between;padding:16px 32px;}
+.cpu_logo {align-items:center;display:flex;gap:10px;}
+.cpu_logo_icon {align-items:center;background-color:#FF6B2C;border-radius:8px;display:flex;flex-shrink:0;height:32px;justify-content:center;width:32px;}
+.cpu_wordmark {color:#1C1917;font-size:18px;font-weight:700;letter-spacing:-0.02em;line-height:22px;}
+.cpu_avatar {align-items:center;background-color:#1C1917;border-radius:50%;color:#FFFFFF;display:flex;font-size:14px;font-weight:600;height:36px;justify-content:center;width:36px;}
+.cpu_main {align-items:center;display:flex;flex-direction:column;padding:80px 48px;}
+.cpu_check {align-items:center;background-color:#2D9F6F;border-radius:50%;display:flex;height:64px;justify-content:center;margin-bottom:24px;width:64px;}
+.cpu_title {color:#1C1917;font-size:32px;font-weight:800;letter-spacing:-0.03em;line-height:38px;margin-bottom:8px;}
+.cpu_subtitle {color:#9C9890;font-size:16px;line-height:22px;margin-bottom:40px;}
+.cpu_code_card {align-items:center;background-color:#FFFFFF;border:1px solid #E8E6E1;border-radius:20px;display:flex;flex-direction:column;gap:16px;padding:40px 64px;width:520px;}
+.cpu_code_label {color:#9C9890;font-size:12px;font-weight:500;letter-spacing:0.08em;line-height:16px;text-transform:uppercase;}
+.cpu_code_num {color:#1C1917;font-size:72px;font-weight:900;letter-spacing:0.08em;line-height:80px;}
+.cpu_barcode {align-items:flex-end;display:flex;gap:2px;height:40px;justify-content:center;}
+.cpu_bar {background-color:#1C1917;width:3px;}
+.cpu_b1 {height:30px;}.cpu_b2 {height:40px;}.cpu_b3 {height:20px;}.cpu_b4 {height:35px;}.cpu_b5 {height:25px;}.cpu_b6 {height:40px;}.cpu_b7 {height:15px;}.cpu_b8 {height:38px;}.cpu_b9 {height:22px;}.cpu_b10 {height:40px;}.cpu_b11 {height:28px;}.cpu_b12 {height:35px;}.cpu_b13 {height:20px;}
+.cpu_code_order {color:#9C9890;font-size:14px;line-height:18px;}
+.cpu_actions {display:flex;gap:16px;margin-top:40px;width:520px;}
+.cpu_btn_primary {align-items:center;background-color:#1C1917;border-radius:12px;display:flex;flex:1;justify-content:center;padding:16px;}
+.cpu_btn_text_w {color:#FFFFFF;font-size:15px;font-weight:700;line-height:18px;}
+.cpu_btn_secondary {align-items:center;background-color:#FFFFFF;border:1px solid #E8E6E1;border-radius:12px;display:flex;flex:1;justify-content:center;padding:16px;}
+.cpu_btn_text_d {color:#1C1917;font-size:15px;font-weight:700;line-height:18px;}

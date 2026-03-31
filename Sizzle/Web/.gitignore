@@ -1,0 +1,7 @@
+node_modules/
+# Generated from TypeScript — run `npm run build`
+assets/js/*.js
+
+# Local secrets (do not commit)
+.env
+.env.*
