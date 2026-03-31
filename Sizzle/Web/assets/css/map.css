@@ -1,0 +1,49 @@
+/* map page styles */
+
+.cmap_wrap {background-color:#FAFAF8;display:flex;flex-direction:column;height:100vh;width:100%;}
+.cmap_nav {align-items:center;border-bottom:1px solid #E8E6E1;display:flex;justify-content:space-between;padding:16px 32px;}
+.cmap_logo {align-items:center;display:flex;gap:10px;}
+.cmap_logo_icon {align-items:center;background-color:#FF6B2C;border-radius:8px;display:flex;flex-shrink:0;height:32px;justify-content:center;width:32px;}
+.cmap_wordmark {color:#1C1917;font-size:18px;font-weight:700;letter-spacing:-0.02em;line-height:22px;}
+.cmap_search_wrap {align-items:center;background-color:#FFFFFF;border:1px solid #E8E6E1;border-radius:10px;display:flex;gap:10px;padding:10px 16px;width:420px;}
+.cmap_search {background:transparent;border:none;color:#1C1917;flex:1;font-family:inherit;font-size:14px;line-height:18px;outline:none;}
+.cmap_view_tabs {background-color:#F0EFEC;border-radius:8px;display:flex;gap:0;padding:3px;}
+.cmap_tab {border-radius:6px;color:#9C9890;cursor:pointer;font-size:13px;font-weight:500;line-height:16px;padding:8px 20px;}
+.cmap_tab_active {background-color:#FFFFFF;color:#1C1917;font-weight:600;}
+.cmap_nav_right {align-items:center;display:flex;gap:16px;}
+.cmap_fav_btn {align-items:center;display:flex;}
+.cmap_avatar {align-items:center;background-color:#1C1917;border-radius:50%;color:#FFFFFF;display:flex;font-size:14px;font-weight:600;height:36px;justify-content:center;width:36px;}
+.cmap_filters {align-items:center;border-bottom:1px solid #E8E6E1;display:flex;gap:10px;padding:12px 32px;}
+.cmap_chip {background-color:#FFFFFF;border:1px solid #E8E6E1;border-radius:100px;color:#1C1917;cursor:pointer;font-size:13px;font-weight:500;line-height:16px;padding:6px 16px;}
+.cmap_chip_active {background-color:#1C1917;border-color:#1C1917;color:#FFFFFF;}
+.cmap_chip_x {font-size:14px;margin-left:6px;}
+.cmap_count {color:#9C9890;font-size:13px;line-height:16px;margin-left:auto;}
+.cmap_body {display:flex;flex:1;overflow:hidden;}
+.cmap_sidebar {border-right:1px solid #E8E6E1;display:flex;flex-direction:column;overflow-y:auto;width:380px;}
+.cmap_vendor_card {border-bottom:1px solid #F0EFEC;cursor:pointer;display:flex;gap:14px;padding:20px 24px;}
+.cmap_vendor_selected {background-color:#FFF8F4;border-left:3px solid #FF6B2C;}
+.cmap_vcard_thumb {align-items:center;background-color:#1C1917;border-radius:10px;display:flex;flex-shrink:0;height:64px;justify-content:center;position:relative;width:64px;}
+.cmap_vcard_thumb_green {background-color:#2C3E2E;}
+.cmap_vcard_thumb_brown {background-color:#4A3728;}
+.cmap_vcard_thumb_dark {background-color:#2C3541;}
+.cmap_vcard_thumb_label {color:#FFFFFF33;font-size:10px;font-weight:800;letter-spacing:0.08em;}
+.cmap_vcard_info {display:flex;flex-direction:column;flex:1;gap:4px;}
+.cmap_vcard_name {color:#1C1917;font-size:15px;font-weight:600;line-height:18px;}
+.cmap_vcard_meta {color:#9C9890;font-size:13px;line-height:16px;}
+.cmap_vcard_stats {align-items:center;display:flex;font-size:13px;gap:6px;line-height:16px;}
+.cmap_rating {color:#FF6B2C;font-weight:700;}
+.cmap_dist {color:#9C9890;}
+.cmap_badge_open {background-color:#2D9F6F;border-radius:4px;color:#FFFFFF;font-size:11px;font-weight:600;line-height:14px;padding:2px 8px;}
+.cmap_badge_closed {background-color:#9C9890;border-radius:4px;color:#FFFFFF;font-size:11px;font-weight:600;line-height:14px;padding:2px 8px;}
+.cmap_main {background-color:#E8E4DB;flex:1;overflow:hidden;position:relative;}
+.cmap_grid {display:grid;gap:2px;grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(4,1fr);height:100%;width:100%;}
+.cmap_grid > div {background-color:#D5D0C6;}
+.cmap_pin {border-radius:100px;color:#FFFFFF;font-size:12px;font-weight:500;padding:6px 12px;position:absolute;white-space:nowrap;}
+.cmap_pin_orange {background-color:#FF6B2C;left:25%;top:42%;}
+.cmap_pin_dark {background-color:#1C1917;}
+.cmap_pin_muted {background-color:#6B6963;}
+.cmap_user_dot {background-color:#4A90D9;border:3px solid #FFFFFF;border-radius:50%;height:16px;position:absolute;width:16px;}
+.cmap_zoom_controls {bottom:24px;display:flex;flex-direction:column;position:absolute;right:24px;}
+.cmap_zoom_btn {align-items:center;background-color:#FFFFFF;border:1px solid #E8E6E1;cursor:pointer;display:flex;font-size:18px;height:40px;justify-content:center;width:40px;}
+.cmap_zoom_btn:first-child {border-radius:8px 8px 0 0;}
+.cmap_zoom_btn:last-child {border-radius:0 0 8px 8px;border-top:0;}

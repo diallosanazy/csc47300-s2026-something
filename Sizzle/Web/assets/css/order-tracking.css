@@ -1,0 +1,58 @@
+/* order-tracking page styles */
+
+.cot_wrap {background-color:#FAFAF8;min-height:100vh;}
+.cot_nav {align-items:center;border-bottom:1px solid #E8E6E1;display:flex;justify-content:space-between;padding:16px 32px;}
+.cot_logo {align-items:center;display:flex;gap:10px;}
+.cot_logo_icon {align-items:center;background-color:#FF6B2C;border-radius:8px;display:flex;flex-shrink:0;height:32px;justify-content:center;width:32px;}
+.cot_wordmark {color:#1C1917;font-size:18px;font-weight:700;letter-spacing:-0.02em;line-height:22px;}
+.cot_avatar {align-items:center;background-color:#1C1917;border-radius:50%;color:#FFFFFF;display:flex;font-size:14px;font-weight:600;height:36px;justify-content:center;width:36px;}
+.cot_body {display:flex;gap:40px;padding:40px 48px;}
+.cot_left {display:flex;flex-direction:column;flex:1.5;gap:24px;}
+.cot_live_row {align-items:center;display:flex;gap:8px;}
+.cot_live_dot {animation:pulse 2s infinite;background-color:#FF6B2C;border-radius:50%;height:8px;width:8px;}
+.cot_live_txt {color:#FF6B2C;font-size:12px;font-weight:600;letter-spacing:0.08em;line-height:16px;text-transform:uppercase;}
+.cot_order_id {color:#1C1917;font-size:32px;font-weight:800;letter-spacing:-0.03em;line-height:38px;}
+.cot_order_meta {color:#9C9890;font-size:15px;line-height:20px;}
+.cot_status_card {background-color:#FFFFFF;border:1px solid #E8E6E1;border-radius:16px;display:flex;flex-direction:column;gap:24px;padding:28px 32px;}
+.cot_steps {align-items:center;display:flex;width:100%;}
+.cot_step_done,.cot_step_active,.cot_step_pending {align-items:center;display:flex;flex-direction:column;flex-shrink:0;gap:8px;}
+.cot_step_circle {align-items:center;border-radius:50%;display:flex;justify-content:center;}
+.cot_circle_done {background-color:#2D9F6F;height:32px;width:32px;}
+.cot_circle_active {background-color:#FF6B2C;height:24px;width:24px;}
+.cot_circle_pending {background-color:#E8E6E1;height:16px;width:16px;}
+.cot_line {flex:1;height:3px;}
+.cot_line_done {background-color:#2D9F6F;}
+.cot_line_pending {background-color:#E8E6E1;}
+.cot_step_label_done {color:#2D9F6F;font-size:12px;font-weight:600;line-height:16px;}
+.cot_step_label_active {color:#FF6B2C;font-size:12px;font-weight:600;line-height:16px;}
+.cot_step_label_pending {color:#9C9890;font-size:12px;line-height:16px;}
+.cot_status_msg {background-color:#FFF8F4;border-left:3px solid #FF6B2C;border-radius:0 8px 8px 0;padding:16px 20px;}
+.cot_msg_text {color:#1C1917;font-size:15px;font-weight:600;line-height:18px;}
+.cot_msg_sub {color:#9C9890;font-size:13px;line-height:16px;margin-top:4px;}
+.cot_map {background-color:#E8E4DB;border-radius:16px;height:300px;overflow:hidden;position:relative;}
+.cot_map_grid {display:grid;gap:2px;grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(3,1fr);height:100%;width:100%;}
+.cot_map_grid > div {background-color:#D5D0C6;}
+.cot_map_pin {background-color:#FF6B2C;border-radius:100px;color:#FFFFFF;font-size:12px;font-weight:500;left:35%;padding:6px 12px;position:absolute;top:30%;white-space:nowrap;}
+.cot_user_dot {background-color:#4A90D9;border:3px solid #FFFFFF;border-radius:50%;height:16px;left:40%;position:absolute;top:60%;width:16px;}
+.cot_distance_tag {background-color:#FFFFFF;border:1px solid #E8E6E1;border-radius:8px;bottom:16px;font-size:13px;font-weight:500;left:16px;padding:6px 12px;position:absolute;}
+.cot_right {display:flex;flex-direction:column;flex:1;gap:24px;}
+.cot_summary_title {color:#1C1917;font-size:18px;font-weight:700;line-height:22px;}
+.cot_item_row {border-bottom:1px solid #F0EFEC;display:flex;justify-content:space-between;padding:12px 0;}
+.cot_item_left {display:flex;flex-direction:column;gap:2px;}
+.cot_item_name {color:#1C1917;font-size:15px;font-weight:600;line-height:18px;}
+.cot_item_note {color:#9C9890;font-size:13px;line-height:16px;}
+.cot_item_price {color:#1C1917;font-size:15px;font-weight:700;line-height:18px;}
+.cot_divider {background-color:#E8E6E1;height:1px;margin:8px 0;}
+.cot_subtotal_row {display:flex;justify-content:space-between;padding:6px 0;}
+.cot_sub_label {color:#9C9890;font-size:14px;line-height:18px;}
+.cot_sub_val {color:#9C9890;font-size:14px;line-height:18px;}
+.cot_total_row {border-top:1px solid #E8E6E1;display:flex;justify-content:space-between;padding:12px 0;}
+.cot_total_label {color:#1C1917;font-size:15px;font-weight:700;line-height:18px;}
+.cot_total_val {color:#1C1917;font-size:15px;font-weight:700;line-height:18px;}
+.cot_timer_card {background-color:#1C1917;border-radius:16px;padding:24px;text-align:center;}
+.cot_timer_label {color:#FFFFFF99;font-size:13px;font-weight:500;line-height:16px;}
+.cot_timer_num {color:#FFFFFF;font-size:48px;font-weight:900;letter-spacing:-0.03em;line-height:52px;padding:8px 0;}
+.cot_timer_unit {color:#FFFFFF80;font-size:13px;line-height:16px;}
+.cot_cta {align-items:center;background-color:#FF6B2C;border-radius:12px;color:#FFFFFF;display:flex;font-size:15px;font-weight:700;justify-content:center;line-height:18px;padding:16px;width:100%;}
+
+@keyframes pulse {0%,100%{opacity:1}50%{opacity:0.4}}
